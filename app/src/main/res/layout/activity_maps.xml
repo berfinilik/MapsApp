@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/showLocationButton"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/location"
+        android:drawableTop="@drawable/location"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="740dp"
+        android:layout_toStartOf="@id/showLocationButton"
+        android:background="@drawable/searchh"
+        android:gravity="center"
+        android:text="Aradığınız konumu giriniz"
+        android:textSize="12sp" />
+
+
+
+
+
+</RelativeLayout>

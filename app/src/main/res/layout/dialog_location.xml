@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <AutoCompleteTextView
+        android:id="@+id/countryAutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/spinner_background"
+        android:hint="Ülke Seçin veya Girin" />
+
+    <AutoCompleteTextView
+        android:id="@+id/cityAutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/spinner_background"
+        android:hint="Şehir Seçin veya Girin" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:text="Konumu Bul"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/colorPrimary" />
+
+</LinearLayout>
