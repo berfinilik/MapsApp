@@ -14,10 +14,21 @@
         android:layout_height="52dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/location"
         android:drawableTop="@drawable/location"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/findRestaurantsButton"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_toStartOf="@id/showLocationButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/restaurant"
         android:gravity="center" />
 
     <Button
@@ -25,17 +36,12 @@
         android:layout_width="41dp"
         android:layout_height="40dp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="740dp"
-        android:layout_toStartOf="@id/showLocationButton"
+        android:layout_marginTop="20dp"
         android:background="@drawable/searchh"
         android:gravity="center"
         android:text="Aradığınız konumu giriniz"
         android:textSize="12sp" />
-
-
-
-
 
 </RelativeLayout>
