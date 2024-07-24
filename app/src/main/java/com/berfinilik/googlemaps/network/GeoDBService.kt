@@ -8,14 +8,14 @@ interface GeoDBService {
     @GET("countries")
     fun getCountries(
         @Query("offset") offset: Int = 0,
-        @Query("limit") limit: Int = 10 // Daha küçük bir limit değeri kullanıyoruz
+        @Query("limit") limit: Int = 10
     ): Call<GeoDBResponse>
 
     @GET("cities")
     fun getCities(
         @Query("countryIds") countryCode: String,
         @Query("offset") offset: Int = 0,
-        @Query("limit") limit: Int = 10 // Daha küçük bir limit değeri kullanıyoruz
+        @Query("limit") limit: Int = 10
     ): Call<GeoDBResponse>
 
     @GET("cities")

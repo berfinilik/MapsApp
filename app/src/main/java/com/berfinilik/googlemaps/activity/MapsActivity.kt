@@ -53,9 +53,8 @@ class MapsActivity : AppCompatActivity() {
     private lateinit var dialogBinding: DialogLocationBinding
     private lateinit var map: MapView
     private lateinit var fusedLocationClient: FusedLocationProviderClient
-    private lateinit var marker: Marker
     private lateinit var placesClient: PlacesClient
-
+    private lateinit var marker:Marker
     private val viewModel: MapsViewModel by viewModels()
 
     private var locationAlertDialog: AlertDialog? = null
@@ -197,7 +196,6 @@ class MapsActivity : AppCompatActivity() {
             }
         }
     }
-
     private fun showLocationDetailsDialog(details: String, geoPoint: GeoPoint?) {
         val dialogBinding = DialogLocationDetailsBinding.inflate(layoutInflater)
         dialogBinding.locationDetailsTextView.text = details

@@ -34,7 +34,6 @@ class MapsViewModel @Inject constructor(
             _cities.value = result
         }
     }
-
     fun fetchCityCoordinates(city: String) {
         mapsRepository.getCityCoordinates(city) { result ->
             _geoPoint.value = result.latitude?.let { result.longitude?.let { it1 ->

@@ -24,6 +24,7 @@ class MapsRepository @Inject constructor(
         })
     }
 
+
     fun getCities(countryCode: String, callback: (List<DataItem>) -> Unit) {
         geoDBService.getCities(countryCode).enqueue(object : retrofit2.Callback<GeoDBResponse> {
             override fun onResponse(call: retrofit2.Call<GeoDBResponse>, response: retrofit2.Response<GeoDBResponse>) {
